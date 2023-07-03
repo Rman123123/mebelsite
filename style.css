@@ -1,0 +1,156 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fon.jpg);
+}
+
+/* Хедер */
+header {
+    color: #000000;
+    padding: 0px;
+    text-align: center;
+}
+header img{
+    margin-top: 20;
+    text-align: center;
+}
+/* Навигационная панель */
+nav {
+    display: flex;
+    background-color: #a78d8d;
+    justify-content: space-between;
+}
+nav a {
+    color: #000000;
+    text-decoration:none;
+    padding: 14px ;  
+}
+.drop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navig_rigth{
+    padding: 14px ;
+    
+}
+.navig_left{
+    padding: 14px ;
+}
+.navig_skr{
+    display: none;
+}
+nav a:hover {
+    color: black;
+    background: #dfe3ae; 
+}
+.navbar-toggler {
+    display: none;
+}
+
+
+/* Содержимое */
+section {
+    display: flex;
+    
+}
+  /* Стили секции с продуктами */
+#zakazkorz{
+    margin: 0px 0px 10px 0px;
+    background-color:wheat;
+}
+  .products {
+    text-align: center;
+    
+  }
+
+  .product {
+    flex: 100%;
+    width: 300px;
+  }
+ 
+  .product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product h3 {
+    margin-top: 10px;
+  }
+  
+  .product p {
+    color: #666;
+  }
+  
+/* Футер */
+footer {
+    background-color: #a78d8d;
+    text-align: center;
+    flex: 0 0 auto;
+}
+footer p {
+    font-size: 14px;
+    margin: 4px;
+}
+h2{
+    text-align: center;
+}
+/* Направление главной оси при width<600px */
+@media screen and (max-width: 600px) {
+    .navig_rigth{
+       display: none;
+    }
+    .navig_left{
+        display: none;
+    }
+    section {
+        flex-direction: column;
+    }
+    .products {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     } 
+    
+    .navbar-toggler {
+        display: block;
+        border: none;
+        font-size: 2em;
+        padding: 0 20px 3px;
+        color: #fff;
+        background-color: #8a6e6e;
+        cursor: pointer;
+    }
+
+    .navbar-toggler:hover {
+        background-color: #c5b2b2;
+    }
+    .drop {
+        width: 52px;
+    }
+    .drop:hover .navig_skr {
+        margin-top: 46px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        background-color: #8a6e6e;
+    }
+}
+/* Направление главной оси при width<900px */
+@media screen and (max-width: 900px) {
+    .product img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      
+}
+

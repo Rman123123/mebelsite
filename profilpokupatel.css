@@ -1,0 +1,79 @@
+.navigpokupatel{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.navigpokupatel a{
+    flex: 100%;
+    color: #000000;
+    text-decoration:none;
+    padding: 10px ;  
+}
+
+.navigpokupatel a:hover{
+    color: black;
+    background: #9f6428; 
+}
+.profilpok{
+    display: flex;
+    text-align: center;
+    background-color: rgb(203, 201, 201);
+    font-size: 16px;
+}
+.profileP{
+    flex: 100%;
+    justify-content: left;
+}
+.profilpok p{
+    text-align: center;
+    
+} 
+input[type="text"]{
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}  
+button{
+    flex: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #a78d8d;
+    display: block;
+    text-decoration:none;
+}
+
+button a{
+    color: #000;
+    text-decoration:none;
+}
+button a:hover{
+    color: black;
+    
+    }
+footer{
+    margin-top:-5px;
+    padding: 5px 0px 0px 0px;
+    height: 50px;    
+}
+@media screen and (max-width: 600px) {
+    .navigpokupatel{
+        display: flex;
+        text-align: center;  
+        flex-direction: column;
+    }
+    .profilpok {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      } 
+      .profileP {
+        width: 100%;
+        /* min-width: 200px; */
+        /* margin: 0; */
+      }
+}

@@ -1,0 +1,50 @@
+.profile {
+    width: 1000px;
+    height: 770px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #929292;
+    border-radius: 10px;
+    
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+th {
+    background-color: #ede8e8;
+}
+
+th {
+    background-color: #efeded;
+}
+
+button {
+    font-size: 16px;
+    width: 60%;
+    padding: 10px;
+    margin:10px 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: #a78d8d;
+    color: #000000;
+
+}
+button a{
+    color: #000000;
+    text-decoration:none;
+}
+button:hover {
+    background-color: #dfe3ae;
+}
